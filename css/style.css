@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@400;500&display=swap');
+/*
+font-family: 'Play', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+:root {
+    --color-theme:#20D3C2;
+    --color-theme-light:#F2FDFB;
+    --color-theme-dark:#0E153D;
+    --color-product-overlay:#313759;
+    --color-gray-dark:#CCCCCC;
+    --color-gray-light:#EEEEEE; 
+    --color-white: #ffffff;
+    --color-product-instock: #82D8C6;
+    --color-product-outofstock: #FE6C6C;
+    --color-footer-bg: #080C24;
+    --color-account-menu-bg: #50546F;
+    --color-forms-grey: #F6F6F6;
+
+    --font-play: 'Play', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    --border-radius-small: 8px;
+    --border-radius-medium: 25px;
+    --border-radius-rounded: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #0E153D;
+}
