@@ -5,7 +5,7 @@ font-family: 'Roboto', sans-serif;
 */
 
 :root {
-    --color-theme:#20D3C2;
+    /* --color-theme:#20D3C2;
     --color-theme-light:#F2FDFB;
     --color-theme-dark:#0E153D;
     --color-product-overlay:#313759;
@@ -16,8 +16,28 @@ font-family: 'Roboto', sans-serif;
     --color-product-outofstock: #FE6C6C;
     --color-footer-bg: #080C24;
     --color-account-menu-bg: #50546F;
-    --color-forms-grey: #F6F6F6;
+    --color-forms-grey: #F6F6F6; */
 
+
+/* Colors */
+    --color-theme:#20D3C2;
+    --color-theme-light:#EDFCFA;
+    --color-theme-dark:#0E153D;
+    --color-white: #FFFFFF;
+    --color-gray-0:#AAAAAA;
+    --color-gray-1:#CCCCCC;
+    --color-gray-2:#E3E3E3;
+    --color-gray-3:#EEEEEE;
+    --color-gray-4:#F6F6F6;
+    --color-product-instock: #82D8C6;
+    --color-product-outofstock: #FE6C6C;
+
+/* Other selected color by Veronica*/
+    --color-product-overlay:#313759;
+    --color-footer-bg: #080C24;
+    --color-account-menu-bg: #50546F;
+
+/* Fonts and sizes */
     --font-play: 'Play', sans-serif;
     --font-roboto: 'Roboto', sans-serif;
     --font-weight-regular: 400;
@@ -35,31 +55,95 @@ font-family: 'Roboto', sans-serif;
     --border-radius-rounded: 50%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #0E153D;
+/* General */
+html, body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-theme-dark);
 }
+
+/* Top menu */
+.top-menu {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    height: 40px;
+}
+
+.top-menu > .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Top menu left */
+.top-menu .site-settings {
+    display: flex;
+}
+
+    .top-menu .site-settings .dropdown-theme {
+        background-color: var(--color-theme);
+        color: var(--color-white);
+    }
+
+    .top-menu .site-settings .dropdown-theme button {
+        background-color: var(--color-theme);
+        color: var(--color-white);
+        border: none;
+    }
+        .top-menu .site-settings .dropdown-theme button:hover {
+            color: var(--color-theme-dark);
+        }
+
+    .top-menu .site-settings .dropdown-theme .dropdown-menu {
+        background-color: var(--color-theme);
+        color: var(--color-white);
+        border: none;
+        width: 250px;
+        margin-top: 3rem;
+    }
+
+        .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item {
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            border: none;
+            width: 100%;
+            margin: 0;
+        }
+
+        .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item:hover {
+            background-color: var(--color-theme-dark);
+            color: var(--color-white);
+        }
+
+/* Top menu right */
+.top-menu .menu-links a{
+    color: var(--color-white);
+    text-decoration: none;
+    margin: 0 1.2rem;
+}
+
+    .top-menu .menu-links a:hover {
+        color: var(--color-theme-dark);
+    }
+
+    .top-menu .menu-links .social-media  {
+        margin-left: 1rem;
+    }
+
+        .top-menu .menu-links .social-media a {
+            margin: 0 0.3rem;
+        }
+
+            .top-menu .menu-links .social-media a:last-child {
+                margin: 0 0 0 0.3rem;
+            }
+
+
+
+
+
+
+
