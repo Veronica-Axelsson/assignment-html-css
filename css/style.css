@@ -167,6 +167,7 @@ padding: 2REM 0;;
 
     .main-menu .search {
         flex: 4;
+        display: none;
     }
 
     .main-menu .menu-links {
@@ -219,15 +220,17 @@ padding: 2REM 0;;
 
 /* --@media section ------------------------------ */
 
+@media (max-width: 577px) {
+    /* Add hamburg menu */
+    .main-menu .menu-links {
+        display: none;
+    }
+}
+
 @media (min-width: 578px) {
     .top-menu .menu-links {
         display: block;
     }
-
-    .main-menu .search {
-        display: none;
-    }
-
 }
 
 
@@ -238,6 +241,10 @@ padding: 2REM 0;;
 
     .top-menu .menu-links .links {
         display: inline;
+    }
+
+    .main-menu .search {
+        display: block;
     }
 }
 
