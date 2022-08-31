@@ -16,7 +16,7 @@
     <header>
          <!-- Top menu. Language, currency, links and social media. -->
         <div class="top-menu">
-             <div class="container">
+             <div class="container border">
                 <div class="site-settings">
                     <div class="dropdown dropdown-theme me-3">
                         <button type="button" data-bs-toggle="dropdown" aria-expanded="false"><span id="selected-language">ENG </span><i class="fa-solid fa-chevron-down ms-2"></i></button>
@@ -54,39 +54,49 @@
              </div>
         </div>
 
-        <!-- Main menu -->
+        <!-- Main menu. Logotype, search and menu links. -->
         <div class="main-menu">
-            <div class="container">
-                <div class="brand">
+            <div class="container border">
+                <div class="brand ">
                     <a href="index-html"><img src="images/logotype.svg" alt="logotype"></a>
                 </div>
-                <div class="search border">Search</div>
-                <div class="menu-links border">
+                <div class="search">Search</div>
+                <div class="menu-links">
                     <a class="menu-link" href="#"><i class="fa-regular fa-user me-2"></i>My account</a>
                     <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
                     <a class="menu-link" href="#"><i class="fa-regular fa-shuffle"></i></a>
-                    <a class="menu-link" href="#"><i class="fa-regular fa-cart-shopping me-2"></i></a>
-                    <span id="cart-total">€9999.00</span>
+                    <a class="menu-link" href="#"><i class="fa-regular fa-cart-shopping me-2"></i>
+                    <span id="cart-total">€9999.00</span></a>
                 </div>
             </div>
+
+            <!-- Main menu bottom. Browse categories and special offer. -->
+            <nav>
+                <div class="container">
+                    <div class="browse-categories">
+                        <div class="dropdown">
+                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>
+                                    <i class="fa-regular fa-bars me-3"></i> Browse Categories
+                                </span>
+                                <i class="fa-regular fa-chevron-down ms-4"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"></a>Computer</li>
+                                <li><a class="dropdown-item" href="#"></a>TV & Display</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="special-offer">
+                        <button class="btn btn-theme">SPECIAL OFFER</button>
+                    </div>
+
+                </div>
+            </nav>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="main-menu-bottom"></div>
-
-
-    </header>
-    
+    </header> 
+    <!-- End of header -->
 
 
 
