@@ -118,6 +118,14 @@ html, body {
             color: var(--color-white);
         }
 
+        .top-menu .menu-links {
+            display: none;
+        }
+        
+        .top-menu .menu-links .links {
+            display: none;
+        }
+        
 /* Top menu right */
 .top-menu .menu-links a{
     color: var(--color-white);
@@ -131,6 +139,7 @@ html, body {
 
     .top-menu .menu-links .social-media  {
         margin-left: 1rem;
+        font-size: var(--font-size-14);
     }
 
         .top-menu .menu-links .social-media a {
@@ -142,8 +151,22 @@ html, body {
             }
 
 
+@media (min-width: 578px) {
+    .top-menu .menu-links {
+        display: block;
+    }
+
+}
 
 
+@media (min-width: 992px) {
+    .top-menu > .container {
+        justify-content: space-between;
+    }
 
+    .top-menu .menu-links .links {
+        display: inline;
+    }
+}
 
 
