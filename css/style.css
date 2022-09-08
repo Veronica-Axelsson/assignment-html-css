@@ -218,7 +218,6 @@ padding: 2rem 0;;
             }
 
 /* Main menu nottom */
-
     .main-menu nav {
         margin-top: 25px;
         border-top: 1px solid var(--color-gray-3);
@@ -270,7 +269,6 @@ padding: 2rem 0;;
         }
 
 /* --Showcase -------------------------------------*/
-
 .showcase {
     background-color: var(--color-gray-3);
 }
@@ -299,9 +297,7 @@ padding: 2rem 0;;
             margin: 2rem 0;
         }
 
-
 /* --Flex -Webshop-info -------------------------------------*/
-
 .webshop-info {
     padding: 4rem 0;
 }
@@ -348,53 +344,6 @@ padding: 2rem 0;;
             }
 
 
-/* --Grid - Webshop-info -------------------------------------*/
-
-.webshop-info-grid {
-    padding: 3rem 0;
-}
-
-    .webshop-info-grid .container-fluid {
-        max-width: 1600px;
-        display: grid;
-        gap: 2.5rem;
-        /* justify-content: center; */
-    }
-
-    .webshop-info-grid .info-box {
-        min-width: 500px;
-        background-color: var(--color-theme-light);
-        padding: 1rem;
-        display: flex;
-        align-items: center;
-        margin: 0 1rem;
-        border-radius: var(--border-radius-small);
-    }
-
-        .webshop-info-grid .info-box:hover {
-            background-color: var(--color-theme);
-            color: var(--color-white);
-        }
-
-        .webshop-info-grid .info-box img {
-            margin-right: 1.5rem;
-        }
-
-            .webshop-info-grid .info-box:hover img {
-                filter: brightness(1000%);
-            }
-
-        .webshop-info-grid .info-box h3 {
-            color: var(--color-theme);
-            font-size: 1rem;
-            font-weight: var(--font-weight-medium);
-        }
-
-            .webshop-info-grid .info-box:hover h3 {
-                color: white;
-
-            }
-
 
 /* --Gallery -------------------------------------*/
 
@@ -405,7 +354,6 @@ padding: 2rem 0;;
 
 
 /* --@media section ------------------------------ */
-
 @media (max-width: 577px) {
     /* Add hamburg menu */
     .main-menu .menu-links {
@@ -419,20 +367,6 @@ padding: 2rem 0;;
 
     .webshop-info .info-box {
         margin-bottom: 3rem;
-    }
-
-/* Webshop Grid */
-    .webshop-info-grid {
-        padding-top: 3rem 0;
-    }
-
-    .webshop-info-grid .container-fluid {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: auto;
-    }
-
-    .webshop-info-grid .info-box {
-        min-width: 90%;
     }
 }
 
@@ -454,20 +388,6 @@ padding: 2rem 0;;
     .webshop-info .info-box {
         margin-bottom: 2rem;
         min-width: 80%;
-    }
-
-/* Webshop Grid */
-    .webshop-info-grid {
-        padding-top: 3rem 0;
-    }
-
-    .webshop-info-grid .container-fluid {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: auto;
-    }
-
-    .webshop-info-grid .info-box {
-        min-width: 90%;
     }
 }
 
@@ -495,24 +415,7 @@ padding: 2rem 0;;
         margin-bottom: 2rem;
         min-width: 40%;
     }
-
-/* Webshop Grid */
-    .webshop-info-grid {
-        padding-top: 2rem 0;
-    }
-
-    .webshop-info-grid .container-fluid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        gap: 1rem;
-    }
-
-    .webshop-info-grid .info-box {
-        min-width: 95%;
-
-    }
 }
-
 
 @media (min-width: 992px) {
     .top-menu .menu-links .links {
@@ -561,21 +464,6 @@ padding: 2rem 0;;
     .webshop-info .info-box {
         margin-bottom: 2rem;
         min-width: 20%;
-    }
-
-/* Webshop Grid */
-    .webshop-info-grid {
-        padding-top: 2rem 0;
-    }
-
-    .webshop-info-grid .container-fluid {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
-        gap: 1rem;
-    }
-
-    .webshop-info-grid .info-box {
-        min-width: 95%;
     }
 }
 
