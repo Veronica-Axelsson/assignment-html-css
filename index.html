@@ -13,7 +13,7 @@
 </head>
 <body>
     
-    <header class="">
+    <header>
 <!-- Top menu. Language, currency, links and social media. -->
         <div class="top-menu">
              <div class="container">
@@ -65,8 +65,10 @@
                     <a class="menu-link" href="#"><i class="fa-regular fa-user me-2"></i>My account</a>
                     <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
                     <a class="menu-link" href="#"><i class="fa-regular fa-shuffle"></i></a>
-                    <a class="menu-link" href="#"><i class="fa-regular fa-cart-shopping me-2"></i>
-                    <span id="cart-total">€9999.00</span></a>
+                    <a id="cart" class="menu-link" href="#">
+                        <span class="badge rounded-pill">99+</span>
+                        <i class="fa-regular fa-cart-shopping me-2"></i>
+                    <span>€9999.00</span></a>
                 </div>
             </div>
 
@@ -98,7 +100,7 @@
     </header> 
 
 <!------ Showcase ------>
-    <section class="showcase d-none">
+    <section class="showcase">
         <div class="container">
             <div class="showcase-body">
                 <h1>Shopping is <strong>MORE FUN</strong></h1>
@@ -110,7 +112,7 @@
     </section>
 
 <!-- ---- Flex webshop-info ---- -->
-    <section class="webshop-info d-none">
+    <section class="webshop-info">
         <div class="container-fluid">
             <div class="info-box">
                 <img src="images/icons/icon-Free-shipping.svg" alt="Free shipping">

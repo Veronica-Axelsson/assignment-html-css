@@ -82,6 +82,10 @@ html, body {
             color: var(--color-white);
         }
 
+/* .bg-theme {
+    background-color: var(--color-theme);
+} */
+
 .section-title {
     padding: 3rem 0;
 
@@ -238,6 +242,22 @@ padding: 2rem 0;;
                 font-size: var(--font-size-16);
             }
 
+        .main-menu .menu-links #cart {
+            position: relative;
+        }
+        
+            .main-menu .menu-links #cart .badge {
+                background-color: var(--color-theme);
+                position: absolute;
+                top: -1.2rem;
+                left: 0.7rem;
+            }
+
+                .main-menu .menu-links #cart:hover .badge {
+                    background-color: var(--color-theme-dark);
+                }
+
+
 /* Main menu nottom */
     .main-menu nav {
         margin-top: 25px;
@@ -320,7 +340,7 @@ padding: 2rem 0;;
 
 /* --Flex -Webshop-info -------------------------------------*/
 .webshop-info {
-    padding: 4rem 0;
+    padding-top: 4rem;
 }
 
     .webshop-info .container-fluid {
@@ -365,10 +385,6 @@ padding: 2rem 0;;
             }
 
 /* --shop-by-category -------------------------------------*/
-/* .shop-by-category {
-
-} */
-
     .shop-by-category .grid {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -382,6 +398,7 @@ padding: 2rem 0;;
         width: 100%;
         overflow: hidden;
         border-radius: var(--border-radius-small);
+        position: relative;
     }
 
         .shop-by-category .category-box .category-box-title {
@@ -391,11 +408,15 @@ padding: 2rem 0;;
             font-weight: var(--font-weight-medium);
             border-radius: 0 var(--border-radius-small) 0 0;
             width: 50%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
         }
 
     #category-box-1 {
         grid-column: 1/2;
         grid-row: 1/2;
+        
     }
 
     #category-box-2 {
@@ -427,28 +448,6 @@ padding: 2rem 0;;
         grid-column: 5/-1;
         grid-row: 3/-1;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* --@media section ------------------------------ */
 @media (max-width: 577px) {
