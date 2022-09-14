@@ -91,11 +91,10 @@ html, body {
             color: var(--color-white);
             border-radius: var(--border-radius-medium);
             font-weight: var(--font-weight-medium);
-
-
             margin-top: 0.5rem;
             font-size: var(--font-size-18);
             width: auto;
+            transition: 0.15s ease-in-out;
         }
     
             .btn-dark:hover {
@@ -103,9 +102,23 @@ html, body {
                 color: var(--color-theme);
             }
 
-/* .bg-theme {
+.bg-theme {
     background-color: var(--color-theme);
-} */
+}
+
+.text-theme {
+    color: var(--color-theme);
+}
+
+.instock {
+    color: var(--color-product-instock);
+}
+
+.outofstock {
+    color: var(--color-product-outofstock);
+}
+
+
 
 .section-title {
     padding: 3rem 0;
@@ -514,26 +527,125 @@ padding-top: 2rem;
 
 /* -- New arrivals ------------------------------------*/
 .new-arrivals {
-    margin-top: 7rem;
+    padding-top: 5rem;
 }
 
+    .new-arrivals .card {
+        position: relative;
+        height: 380px;
+        overflow: hidden;
+    }
 
+        .new-arrivals .card img {
+            height: 400px;
+        }
 
+        .new-arrivals .card .card-body {
+            position: absolute;
+            padding: 1rem;
+            bottom: 0;
+            height: 14%;
+            width: 100%;
+            color: var(--color-white);
+            z-index: 1;
+            transition: 0.3s ease-in-out;
+            font-size: 1rem;
+        }
 
+            .new-arrivals .card:hover .card-body {
+                height: 40%;
+            }
 
+            .new-arrivals .card .card-body h2 {
+                font-size: 1.125rem;
+                margin-bottom: 1.3rem;
+                transition: 0.3s ease-in-out;
+                font-weight: var(--font-weight-regular);
+            }
 
+                .new-arrivals .card:hover .card-body h2 {
+                    margin-bottom: 0;
+                }
 
+        .new-arrivals .card .card-body button {
+            background-color: transparent;
+            color: var(--color-white);
+            border: 1px solid var(--color-white);
+            font-size: 0.875rem;
+            padding-left: 0.9rem;
+            padding-right: 0.9rem;
+            margin: 0.5rem 0;
+            transition: 0.3s ease-in-out;
 
+        }
 
+        .new-arrivals .card .card-body .card-old-price {
+            text-decoration: line-through;
+            margin-bottom: 0.5rem;
+            /* transition: 0.3s ease-in-out; */
+        }
 
+        .new-arrivals .card .card-body .card-discount-price {
+            color: var(--color-theme);
+            font-weight: var(--font-weight-medium);
+            font-size: 1.5rem;
+            /* transition: 0.3s ease-in-out; */
+            margin: 0;
+        }
 
+        .new-arrivals .card .card-background {
+            position: absolute;
+            bottom: 0;
+            height: 15%;
+            width: 100%;
+            background-color: var(--color-theme-dark);
+            opacity: 0.90;
+            transition: height 0.3s ease-in-out;
+        }
 
+            .new-arrivals .card:hover .card-background {
+                height: 100%;
+            }
+
+    .new-arrivals .card .card-menu {
+        position: absolute;
+        z-index: 1;
+        top: 121%;
+        right: 1rem;
+        list-style: none;
+        margin: auto;
+        padding: 0.8rem;
+        font-size: 1.25rem;
+        border-radius: var(--border-radius-medium);
+        background-color: var(--color-white);
+        transition: top 0.3s ease-in-out;
+    }
+
+        .new-arrivals .card:hover .card-menu {
+            top: 20px;
+        }
+
+            .new-arrivals .card .card-menu li { 
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;
+                font-size: 1.1em;
+
+            }
+
+                .new-arrivals .card .card-menu li a { 
+                    color: var(--color-gray-0);
+                }
+
+                    .new-arrivals .card .card-menu li a:hover { 
+                        color: var(--color-theme);
+                    }
 
 
 
 /* -- Learn more ------------------------------------*/
     .learn-more {
         background-color: var(--color-gray-1);
+        margin-top: 8rem;
     }
 
     .learn-more .conatiner {
@@ -578,64 +690,69 @@ padding-top: 2rem;
 
 /* -- Flash sale-time ------------------------------------*/
         .sale-time {
-            margin-top: 2rem;
+            margin-top: 10rem;
+            margin-bottom: 5rem;
             background-color: var(--color-theme-dark);
         }
     
-        .sale-time .conatiner {
+        .sale-time .container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
         }
     
-        .sale-time .sale-box {
-            display: flex;
-            flex: 1;
-            justify-content: space-between;
-            color: var(--color-white);
-            text-align: center;
-            align-items: center;
-        }
-    
-            .sale-time .sale-box .sale-time-box {
-                background-color: var(--color-theme);
-                justify-items: center;
-                padding: 2rem;
-                margin-bottom: 9rem;
+            .sale-time .container .sale-box {
+                display: flex;
+                flex: 1;
+                justify-content: space-between;
+                color: var(--color-white);
+                text-align: center;
+                align-items: center;
             }
-
-            .sale-time .sale-box .sale-time-box h2{
-                font-family: var(--font-play);
-                font-size: var(--font-size-60);
-                font-weight: var(--font-weight-bold);
-            }
-
-                .sale-time .sale-box .sale-time-box h2 span{
-                    display: block;
+        
+                .sale-time .container .sale-box .sale-time-box {
+                    background-color: var(--color-theme);
+                    justify-items: center;
+                    padding: 2rem;
+                    margin-bottom: 9rem;
                 }
 
-            .sale-time .sale-box .sale-time-box p{
-                font-size: var(--font-size-24);
-                font-weight: var(--font-weight-medium);
-            }
+                .sale-time .container .sale-box .sale-time-box h2{
+                    font-family: var(--font-play);
+                    font-size: var(--font-size-60);
+                    font-weight: var(--font-weight-bold);
+                }
+
+                    .sale-time .container .sale-box .sale-time-box h2 span{
+                        display: block;
+                    }
+
+                .sale-time .container .sale-box .sale-time-box p{
+                    font-size: var(--font-size-24);
+                    font-weight: var(--font-weight-medium);
+                }
             
 
-        .sale-time .time {
-            display: flex;
-            flex: 1;
+        .sale-time .container .sale-box .time {
+            /* display: flex;
+            flex: 1; */
+            /* display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly; */
         }
 
-            .sale-time .time .circle {
+            .sale-time .container .time .circle {
+                width: 100px;
+                height: 100px;
                 background-color: var(--color-white);
                 color: var(--color-theme);
                 border-radius: var(--border-radius-rounded);
             }
 
-            .sale-time .time a {
-                display: block;
+            .sale-time .container .time a {
+                /* display: block; */
 
             }
-
 
 
 
@@ -652,12 +769,49 @@ padding-top: 2rem;
                 font-size: var(--font-size-18);
             }
 
+/* -- Subscribe ------------------------------ */
+.subscribe {
+    margin-top: 8rem;
+    background-color: var(--color-gray-4);
 
+}
+
+    .subscribe .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    
+        .subscribe .container .subscribe-text {
+            padding-top: 3rem;
+        }
+
+            .subscribe .container .subscribe-text h2 {
+                font-size: 2.25rem;
+                font-family: var(--font-play);
+                font-weight: var(--font-weight-bold);
+            }
+
+                .subscribe .container .subscribe-text h2 span {
+                    color: var(--color-theme);
+                }
+
+            .subscribe .container .subscribe-text p {
+                margin-top: 1rem;
+                font-size: 1rem;
+                max-width: 60%;
+            }
+
+        .subscribe .container .subscribe-box {
+            background-color: var(--color-gray-1);
+            min-height: 313px;
+            width: 50%;
+
+        }
 
 /* -- Footer ------------------------------ */
 
      footer {
-        margin-top: 10rem;
         background-color: var(--color-theme-dark);
         color: var(--color-white);
      }  
