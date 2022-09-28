@@ -13,7 +13,7 @@
 </head>
 <body>
     
-    <header class="">
+    <header class="d-none">
 <!-- Top menu. Language, currency, links and social media. -->
         <div class="top-menu">
              <div class="container">
@@ -60,7 +60,13 @@
                 <div class="brand ">
                     <a href="index.html"><img src="images/logotype.svg" alt="logotype"></a>
                 </div>
-                <div class="search">Search</div>
+                <div class="search">
+                    <form id="searchBoxForm">
+                        <input id="query" type="text" placeholder="Search products...">
+                        <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+
                 <div class="menu-links">
                     <a class="menu-link" href="account.html"><i class="fa-regular fa-user me-2"></i>My account</a>
                     <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
@@ -100,7 +106,7 @@
     </header> 
 
 <!------ Showcase ------>
-    <section class="showcase">
+    <section class="showcase d-none">
         <div class="container">
             <div class="showcase-body">
                 <h1>Shopping is <strong>MORE FUN</strong></h1>
@@ -112,7 +118,7 @@
     </section>
 
 <!-- ---- Flex webshop-info ---- -->
-    <section class="webshop-info">
+    <section class="webshop-info d-none">
         <div class="container-fluid">
             <div class="info-box">
                 <img src="images/icons/icon-Free-shipping.svg" alt="Free shipping">
@@ -146,7 +152,7 @@
     </section>
 
 <!------ shop-by-category ------>
-    <section class="shop-by-category">
+    <section class="shop-by-category d-none">
         <div class="container">
             <div class="section-title">
                 <h2>SHOP BY <span>CATEGORY</span></h2>
@@ -183,7 +189,7 @@
 
 
 <!------ New arrivals ------>
-    <section class="new-arrivals">
+    <section class="new-arrivals d-none">
         <div class="container">
             <div class="section-title">
                 <h2>NEW <span>ARRIVALS</span></h2>
@@ -195,14 +201,14 @@
                 <div class="col">
                 <div class="card h-100">
                     <ul class="card-menu">
-                        <li><a href="#"><i class="fa-solid fa-circle instock"></i></a></li>
+                        <li><div class="bubble-storage"><img src="/images/ProductOverlayMenu/bubbleStorage.svg" alt=""></div><a href="#"><i class="fa-solid fa-circle instock"></i></a></li>
                         <li><a href="#" ><i class="fa-regular fa-heart"></i></a></li>
                         <li><a href="#" ><i class="fa-regular fa-shuffle"></i></a></li>
                         <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                         <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
                     </ul>
 
-                    <img src="images/Models/ProductThumb-2.png" alt="placeholder image">
+                    <img src="images/Models/ProductThumb-2a.svg" alt="placeholder image">
                     <div class="card-body">
                     <h2>Blue silk flare sleeved top</h2>
                     <button disabled>Fashion</button>
@@ -232,7 +238,7 @@
                         <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
                     </ul>
     
-                    <img src="images/Models/ProductThumb-1.png" alt="placeholder image">
+                    <img src="images/Models/ProductThumb-1.svg" alt="placeholder image">
                     <div class="card-body">
                         <h2>New look men's coat</h2>
                         <button disabled>Fashion</button>
@@ -262,7 +268,7 @@
                             <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
                         </ul>
 
-                        <img src="images/Models/ProductThumb-9.png" alt="placeholder image">
+                        <img src="images/Models/ProductThumb-9.svg" alt="placeholder image">
                         <div class="card-body">
                         <h2>Circle pattern girls shirt</h2>
                         <button disabled>Fashion</button>
@@ -292,9 +298,9 @@
                             <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
                         </ul>
 
-                        <img src="images/Models/ProductThumb-9.png" alt="placeholder image">
+                        <img src="images/Models/ProductThumb-3.svg" alt="placeholder image">
                         <div class="card-body">
-                        <h2>Circle pattern girls shirt</h2>
+                        <h2>Fluffy girls shirt</h2>
                         <button disabled>Fashion</button>
                         <p class="card-old-price">€35.00</p>
                         <div class="d-flex justify-content-between align-items-center w-100">
@@ -318,7 +324,7 @@
 
 
 <!------ Learn more ------>
-    <section class="learn-more">
+    <section class="learn-more d-none">
         <div class="container">
             <div class="learn-box">
                 <div class="learn-box-sale">
@@ -341,7 +347,7 @@
 
 
 <!------ Featured products ------>
-    <section class="new-arrivals">
+    <section class="new-arrivals d-none">
         <div class="container">
             <div class="section-title">
                 <h2>FEATURED <span>PRODUCTS</span></h2>
@@ -360,7 +366,7 @@
                         <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
                     </ul>
 
-                    <img src="images/Models/ProductThumb-3.png" alt="placeholder image">
+                    <img src="images/Models/ProductThumb-3.svg" alt="placeholder image">
                     <div class="card-body">
                     <h2>Winter collection for women's</h2>
                     <button disabled>Fashion</button>
@@ -390,7 +396,7 @@
                         <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
                     </ul>
     
-                    <img src="images/Models/ProductThumb-4.png" alt="placeholder image">
+                    <img src="images/Models/ProductThumb-4.svg" alt="placeholder image">
                     <div class="card-body">
                         <h2>New look men's coat</h2>
                         <button disabled>Fashion</button>
@@ -420,7 +426,7 @@
                             <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
                         </ul>
 
-                        <img src="images/Models/ProductThumb-5.png" alt="placeholder image">
+                        <img src="images/Models/ProductThumb-5.svg" alt="placeholder image">
                         <div class="card-body">
                         <h2>Red women's blazer full</h2>
                         <button disabled>Fashion</button>
@@ -450,7 +456,7 @@
                             <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
                         </ul>
 
-                        <img src="images/Models/ProductThumb-3.png" alt="placeholder image">
+                        <img src="images/Models/ProductThumb-9.svg" alt="placeholder image">
                         <div class="card-body">
                         <h2>Festive collection for women's</h2>
                         <button disabled>Fashion</button>
@@ -477,7 +483,7 @@
 
 
 <!------ Flash sale-time ------>
-    <section class="sale-time">
+    <section class="sale-time d-none">
         <div class="container">
             <div class="sale-box">
                 <div class="sale-time-box">
@@ -501,60 +507,13 @@
         </div>
     </section>
 
-    
 
 <!------ Top sellers ------>
-<section class="kenkata-grid">
-    <class class="container">
-        <div class="section-title">
-            <h2>TOP <span>SELLERS</span></h2>
-            <img src="images/divider.svg" alt="Section divider">
-            <p>Check out our weekly top sellers in all category</p>
-        </div>
-
-        <article class="kenkata bg-primary-400 text-neutral-100">
-            <!-- något här -->
-                </article>
-            
-                <article class="kenkata flow bg-secondary-400 text-neutral-100">
-            <!-- något här -->
-            
-                </article>
-                <article class="kenkata flow bg-neutral-100 text-secondary-400">
-            <!-- något här -->
-            
-                </article>
-
-
-
-
-
-
-
-
-
-    </class>
-
-
-    
-</section>
-
-
-
-
-
 <section class="top-sellers">
     <div class="container">
-        <div class="section-title">
-            <h2>TOP <span>SELLERS</span></h2>
-            <img src="images/divider.svg" alt="Section divider">
-            <p>Check out our weekly top sellers in all category</p>
-        </div>
-
-        <div class="row row-cols-1 row-cols-md-3 row-cols-ld-3 g-1">
-            <div class="col">
-            <div class="card h-100">
-                <ul class="card-menu">
+        <div id="grid-item-1" class="grid-item ">
+            <div class="card">
+                <ul id="topSellerImg1" class="card-menu">
                     <li><a href="#"><i class="fa-solid fa-circle instock"></i></a></li>
                     <li><a href="#" ><i class="fa-regular fa-heart"></i></a></li>
                     <li><a href="#" ><i class="fa-regular fa-shuffle"></i></a></li>
@@ -562,28 +521,28 @@
                     <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
                 </ul>
 
-                <img src="images/Models/ProductThumb-6.png" alt="placeholder image">
-                <div class="card-body">
-                <h2>Winter collection for women's</h2>
-                <button disabled>Fashion</button>
-                <p class="card-old-price">€60.00</p>
-                <div class="d-flex justify-content-between align-items-center w-100">
-                    <p class="card-discount-price">€40.00</p>
-                    <div class="text-theme">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                <img src="images/Models/ProductThumb-6.svg" alt="placeholder image">
+                <div id="card-bodyImg1" class="card-body">
+                    <h2>Blue silk flare sleeved top</h2>
+                    <button disabled>Fashion</button>
+                    <p class="card-old-price">€50.00</p>
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <p class="card-discount-price">€20.00</p>
+                        <div class="text-theme">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div class="card-background"></div>
             </div>
-            </div>
+        </div>
 
-            <div class="col">
-                <div class="card h-100">
+        <div class="grid-item grid-item-2">
+            <div class="card">
                 <ul class="card-menu">
                     <li><a href="#"><i class="fa-solid fa-circle outofstock"></i></a></li>
                     <li><a href="#" ><i class="fa-regular fa-heart"></i></a></li>
@@ -592,43 +551,13 @@
                     <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
                 </ul>
 
-                <img src="images/Models/ProductThumb-7.png" alt="placeholder image">
+                <img src="images/Models/ProductThumb-7.svg" alt="placeholder image">
                 <div class="card-body">
                     <h2>New look men's coat</h2>
                     <button disabled>Fashion</button>
-                    <p class="card-old-price">€50.00</p>
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                    <p class="card-discount-price">€20.00</p>
-                    <div class="text-theme">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                    </div>
-                </div>
-                <div class="card-background"></div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100">
-                    <ul class="card-menu">
-                        <li><a href="#"><i class="fa-solid fa-circle instock"></i></a></li>
-                        <li><a href="#" ><i class="fa-regular fa-heart"></i></a></li>
-                        <li><a href="#" ><i class="fa-regular fa-shuffle"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
-                    </ul>
-
-                    <img src="images/Models/ProductThumb-8.png" alt="placeholder image">
-                    <div class="card-body">
-                    <h2>Red women's blazer full</h2>
-                    <button disabled>Fashion</button>
-                    <p class="card-old-price">€35.00</p>
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <p class="card-discount-price">€15.00</p>
+                    <p class="card-old-price">€64.00</p>
+                    <div class="stars w-100">
+                        <p class="card-discount-price">€56.00</p>
                         <div class="text-theme">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -637,27 +566,42 @@
                             <i class="fa-regular fa-star"></i>
                         </div>
                     </div>
-                    </div>
-                    <div class="card-background"></div>
                 </div>
+                <div class="card-background"></div>
             </div>
+        </div>
 
+        <div class="grid-item grid-item-3">
+            <div class="card">
+                <ul class="card-menu">
+                    <li><a href="#"><i class="fa-solid fa-circle instock"></i></a></li>
+                    <li><a href="#" ><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="#" ><i class="fa-regular fa-shuffle"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
+                </ul>
 
+                <img src="images/Models/ProductThumb-8.svg" alt="placeholder image">
+                <div class="card-body">
+                    <h2>Circle pattern girls shirt</h2>
+                    <button disabled>Fashion</button>
+                    <p class="card-old-price">€35.00</p>
+                    <div class="stars w-100">
+                        <p class="card-discount-price">€15.00</p>
+                        <div class="text-theme">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-background"></div>
+            </div>
         </div>
     </div>
 </section>
-
-
-
-
-
-
-
-
-<!------ Top sellers ------>
-
-
-
 
 
 <!------ Subscribe ------>
@@ -667,16 +611,26 @@
                 <h2>SUBSCRIBE <span>NOW</span></h2>
                 <p>Signup for awesome news about our new products and
                     know our special discounts on products.</p>
-                <!-- Enter email form -->
-                <p>Enter email field + button</p>
-            </div>
-            <div class="subscribe-box border"></div>
-        </div>
 
+                <!-- Enter email adress form -->
+                <div class="subscribe-width">
+                    <div class="container">
+                        <div class="search">
+                            <form id="searchBoxForm" class="searchBoxForm">
+                                <input id="query" type="text" placeholder="Enter email address">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe-box"></div>
+        </div>
     </section>
 
+
 <!------ Footer ------>
-    <footer class="">
+    <footer>
         <div class="container">
             <p>© Copyright 2022 Kenkata</p>
         </div>
