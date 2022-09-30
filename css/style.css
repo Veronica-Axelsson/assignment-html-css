@@ -82,21 +82,6 @@ a {
         color: var(--color-white);
     }
 
-/* .btn-popper {
-    background-color: blue;
-    color: pink;
-    border-radius: var(--border-radius-medium);
-    font-weight: var(--font-weight-medium);
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
-    transition: 0.15s ease-in-out;
-}
-    
-        .btn-popper:hover {
-            background-color: var(--color-theme-dark);
-            color: var(--color-white);
-        } */
-
     .btn-white {
         background-color: var(--color-white);
         color: var(--color-theme);
@@ -151,6 +136,14 @@ a {
 }
 
 .instock {
+    color: var(--color-gray-0);
+}
+
+    .instock:hover {
+        color: var(--color-theme);
+    }
+
+.instock2 {
     color: var(--color-product-instock);
 }
 
@@ -717,7 +710,6 @@ padding-top: 2rem;
             padding-right: 0.9rem;
             margin: 0.5rem 0;
             transition: 0.3s ease-in-out;
-
         }
 
         .products .card .card-body .card-old-price {
@@ -745,8 +737,6 @@ padding-top: 2rem;
             .products .card:hover .card-background {
                 height: 100%;
             }
-
-
 
         .products .card .card-menu {
             position: absolute;
@@ -791,7 +781,6 @@ padding-top: 2rem;
                     }
 
                         .products .card .card-menu li a:hover { 
-                            /* border: 2px solid; */
                             color: var(--color-theme);
                             border-radius: 1rem;
                         }
@@ -805,10 +794,6 @@ padding-top: 2rem;
         font-size: 1.4rem;
     }
 
-    .products .card .card-menu .bubble-storage .data-bs-title {
-        background-color: pink;
-    }
-
     .custom-tooltip {
         --bs-tooltip-bg: var(--color-theme);
         --bs-tooltip-color: var(--color-white);
@@ -819,35 +804,11 @@ padding-top: 2rem;
       }
 
 
-
-      /* --#{$prefix}tooltip-zindex: #{$zindex-tooltip};
-      --#{$prefix}tooltip-max-width: #{$tooltip-max-width};
-      --#{$prefix}tooltip-padding-x: #{$tooltip-padding-x};
-      --#{$prefix}tooltip-padding-y: #{$tooltip-padding-y};
-      --#{$prefix}tooltip-margin: #{$tooltip-margin};
-      @include rfs($tooltip-font-size, --#{$prefix}tooltip-font-size);
-      --#{$prefix}tooltip-color: #{$tooltip-color};
-      --#{$prefix}tooltip-bg: #{$tooltip-bg};
-      --#{$prefix}tooltip-border-radius: #{$tooltip-border-radius};
-      --#{$prefix}tooltip-opacity: #{$tooltip-opacity};
-      --#{$prefix}tooltip-arrow-width: #{$tooltip-arrow-width};
-      --#{$prefix}tooltip-arrow-height: #{$tooltip-arrow-height};
- */
-
-
 /* -- Learn more ------------------------------------*/
 .learn-more {
     background-color: var(--color-gray-1);
     margin-top: 8rem;
 }
-
-    .learn-more .conatiner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-            background-image: url(images/ProductOverlayMenu/bubbleStorage.svg);
-
-    }
 
     .learn-more .learn-box {
         display: flex;
@@ -977,18 +938,16 @@ padding-top: 2rem;
 
 
 /* -- Top-sellers ------------------------------------*/
-.top-sellers .container {
-    display: grid;
-    justify-content: space-between;
-    padding: 0;
-    gap: 0.5rem;
-}
-
-
 .top-sellers {
     padding-top: 5rem;
-    
 }
+
+    .top-sellers .container {
+        display: grid;
+        justify-content: space-between;
+        padding: 0;
+        gap: 0.5rem;
+    }
 
     .top-sellers .card {
         position: relative;
@@ -1030,7 +989,6 @@ padding-top: 2rem;
             grid-row: 2/3;
             grid-column: 3/4;
             height: 400px;
-
         }
 
             .top-sellers .grid-item-3 img {
@@ -1111,7 +1069,6 @@ padding-top: 2rem;
                 align-items: center;
             }
 
-
             .top-sellers .card .card-background {
                 position: absolute;
                 bottom: 0;
@@ -1139,7 +1096,6 @@ padding-top: 2rem;
                 .top-sellers .card:hover #topSellerImg1Bg {
                     height: 100%;
                 }
-
             
     .top-sellers .card .card-menu {
         position: absolute;
@@ -1173,6 +1129,13 @@ padding-top: 2rem;
                     color: var(--color-theme);
                 }
 
+    .top-sellers .card .card-menu .bubble-storage {
+        background-color: white;
+        border: none;
+        margin: 0;
+        padding: 0;
+        font-size: 1.4rem;
+    }
 
 
 /* -- Subscribe ------------------------------ */
@@ -1215,18 +1178,18 @@ padding-top: 2rem;
         }
 
 /* subscribe search*/
-.subscribe .search {
+.subscribe .subscribe-form {
     flex: 4;
 }
 
-    .subscribe .search #searchBoxForm {
+    .subscribe .subscribe-form #subscribeBoxForm {
         border-radius: var(--border-radius-medium);
         height: 46px;
         margin: auto;
         position: relative;
     }
 
-        .subscribe .search #searchBoxForm input {
+        .subscribe .subscribe-form #subscribeBoxForm input {
             position: absolute;
             border-radius: var(--border-radius-medium);
             height: 100%;
@@ -1237,11 +1200,11 @@ padding-top: 2rem;
             padding-left: 1.4rem;
         }
 
-            .subscribe .search #searchBoxForm input:focus {
+            .subscribe .subscribe-form #subscribeBoxForm input:focus {
                 border-color: var(--color-gray-0);
             }
 
-        .subscribe .search #searchBoxForm button {
+        .subscribe .subscribe-form #subscribeBoxForm button {
             position: absolute;
             top: 0;
             right: -2px;
@@ -1256,7 +1219,7 @@ padding-top: 2rem;
             transition: 0.3s ease-in-out;
         }
 
-            .subscribe .search #searchBoxForm button:hover {
+            .subscribe .subscribe-form #subscribeBoxForm button:hover {
                 background-color: var(--color-theme-dark);
             }
 

@@ -25,7 +25,6 @@
                             <li><a class="dropdown-item" href="#">SWE</a></li>
                         </ul>
                     </div>
-
                     <div class="dropdown dropdown-theme me-3">
                         <button type="button" data-bs-toggle="dropdown" aria-expanded="false"><span id="selected-currency">EUR </span><i class="fa-solid fa-chevron-down ms-2"></i></button>
                         <ul id="currencies" class="dropdown-menu dropdown-theme">
@@ -35,7 +34,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="menu-links">
                     <span class="links">
                         <a href="#">Newsletter</a>
@@ -65,15 +63,14 @@
                         <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
                     </form>
                 </div>
-
                 <div class="menu-links">
                     <a class="menu-link" href="account.html"><i class="fa-regular fa-user me-2"></i>My account</a>
                     <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a class="menu-link" href="#"><i class="fa-regular fa-shuffle"></i></a>
-                    <a id="cart" class="menu-link" href="#">
-                        <span class="badge rounded-pill">99+</span>
-                        <i class="fa-regular fa-cart-shopping me-2"></i>
-                    <span>€9999.00</span></a>
+                    <a id="cart" class="menu-link" href="#"><span class="badge rounded-pill">0</span>
+                    <i class="fa-regular fa-shuffle"></i></a>
+                    <a id="cart" class="menu-link" href="#"><span class="badge rounded-pill">0</span>
+                    <i class="fa-regular fa-cart-shopping me-2"></i>
+                    <span>€0</span></a>
                 </div>
             </div>
 
@@ -94,11 +91,9 @@
                             </ul>
                         </div>
                     </div>
-
                     <div class="special-offer">
                         <button class="btn btn-theme">SPECIAL OFFER</button>
                     </div>
-
                 </div>
             </nav>
         </div>
@@ -150,7 +145,7 @@
         </div>
     </section>
 
-<!------ shop-by-category ------>
+<!------ Grid shop-by-category ------>
     <section class="shop-by-category">
         <div class="container">
             <div class="section-title">
@@ -186,8 +181,6 @@
     </section>
 
 
-
-
 <!------ New arrivals ------>
     <section class="products">
         <div class="container">
@@ -201,28 +194,21 @@
                 <div class="col">
                     <div class="card h-100">
                         <ul class="card-menu">
-                            <!-- <li><a href="#"><i class="fa-solid fa-circle instock"></i></a></li> -->
                             <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
-                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Storage" data-bs-custom-class="custom-tooltip">
-                                <i class="fa-solid fa-circle instock"></i></button></a></li>
-
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="In storage" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-solid fa-circle instock instock2"></i></button></a></li>
                             <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
-                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Favorite" data-bs-custom-class="custom-tooltip">
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite" data-bs-custom-class="custom-tooltip">
                                 <i class="fa-regular fa-heart instock"></i></button></a></li>
-
                             <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
                                 data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Shuffle" data-bs-custom-class="custom-tooltip">
                                 <i class="fa-regular fa-shuffle instock"></i></button></a></li>
-
                             <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
-                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Search" data-bs-custom-class="custom-tooltip">
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" data-bs-custom-class="custom-tooltip">
                                 <i class="fa-solid fa-magnifying-glass instock"></i></button></a></li>
-
                             <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
-                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Cart" data-bs-custom-class="custom-tooltip">
-                                <i class="fa-regular fa-cart-shopping instock"></i></button></a></li>
-                                
-                            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-cart-shopping instock"></i></button></a></li>                                
                         </ul>
 
                         <img src="images/Models/ProductThumb-2a.svg" alt="placeholder image">
@@ -248,11 +234,21 @@
                 <div class="col">
                     <div class="card h-100">
                         <ul class="card-menu">
-                            <li><a href="#"><i class="fa-solid fa-circle outofstock"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-shuffle"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="In storage" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-solid fa-circle outofstock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-heart instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Shuffle" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-shuffle instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-solid fa-magnifying-glass instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-cart-shopping instock"></i></button></a></li>                                
                         </ul>
         
                         <img src="images/Models/ProductThumb-1.svg" alt="placeholder image">
@@ -278,11 +274,21 @@
                 <div class="col">
                     <div class="card h-100">
                         <ul class="card-menu">
-                            <li><a href="#"><i class="fa-solid fa-circle instock"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-shuffle"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="In storage" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-solid fa-circle instock instock2"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-heart instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Shuffle" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-shuffle instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-solid fa-magnifying-glass instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-cart-shopping instock"></i></button></a></li> 
                         </ul>
 
                         <img src="images/Models/ProductThumb-9.svg" alt="placeholder image">
@@ -308,11 +314,21 @@
                 <div class="col">
                     <div class="card h-100">
                         <ul class="card-menu">
-                            <li><a href="#"><i class="fa-solid fa-circle instock"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-shuffle"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="In storage" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-solid fa-circle instock instock2"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-heart instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Shuffle" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-shuffle instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-solid fa-magnifying-glass instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-cart-shopping instock"></i></button></a></li> 
                         </ul>
 
                         <img src="images/Models/ProductThumb-3.svg" alt="placeholder image">
@@ -338,17 +354,6 @@
         </div>
     </section>
 
-    <section>
-        <div class="container">
-
-            <!-- <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on left">
-                Tooltip on left
-              </button> -->
-
-
-        </div>  
-    </section>
-
 
 <!------ Learn more ------>
     <section class="learn-more">
@@ -359,7 +364,6 @@
                     <p>FOR NEW CUSTOMERS</p>
                     <a href="#" class="btn btn-lg btn-dark">SHOP NOW</a>
                 </div>
-        
                 <div class="learn-more-box">
                     <p>Donec pulvinar arcu vitae ipsum varius cursus. Nunc iaculis fermentum iaculis. 
                         Nunc pulvinar purus at erat lacinia, ut convallis nibh consequat. 
@@ -385,11 +389,21 @@
                 <div class="col">
                     <div class="card h-100">
                         <ul class="card-menu">
-                            <li><a href="#"><i class="fa-solid fa-circle instock"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-shuffle"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="In storage" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-solid fa-circle instock instock2"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-heart instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Shuffle" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-shuffle instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-solid fa-magnifying-glass instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-cart-shopping instock"></i></button></a></li>  
                         </ul>
 
                         <img src="images/Models/ProductThumb-3.svg" alt="placeholder image">
@@ -415,11 +429,21 @@
                 <div class="col">
                     <div class="card h-100">
                         <ul class="card-menu">
-                            <li><a href="#"><i class="fa-solid fa-circle instock"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-shuffle"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="In storage" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-solid fa-circle instock instock2"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-heart instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Shuffle" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-shuffle instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-solid fa-magnifying-glass instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-cart-shopping instock"></i></button></a></li>  
                         </ul>
         
                         <img src="images/Models/ProductThumb-4.svg" alt="placeholder image">
@@ -445,11 +469,21 @@
                 <div class="col">
                     <div class="card h-100">
                         <ul class="card-menu">
-                            <li><a href="#"><i class="fa-solid fa-circle instock"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-shuffle"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="In storage" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-solid fa-circle outofstock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-heart instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Shuffle" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-shuffle instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-solid fa-magnifying-glass instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-cart-shopping instock"></i></button></a></li>   
                         </ul>
 
                         <img src="images/Models/ProductThumb-5.svg" alt="placeholder image">
@@ -475,11 +509,21 @@
                 <div class="col">
                     <div class="card h-100">
                         <ul class="card-menu">
-                            <li><a href="#"><i class="fa-solid fa-circle instock"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-heart"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-shuffle"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                            <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="In storage" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-solid fa-circle instock instock2"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-heart instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Shuffle" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-shuffle instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-solid fa-magnifying-glass instock"></i></button></a></li>
+                            <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                                data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" data-bs-custom-class="custom-tooltip">
+                                <i class="fa-regular fa-cart-shopping instock"></i></button></a></li>  
                         </ul>
 
                         <img src="images/Models/ProductThumb-9.svg" alt="placeholder image">
@@ -536,14 +580,24 @@
         <p>Check out our weekly top sellers in all category</p>
     </div>
     <div class="container">
-        <div id="grid-item-1" class="grid-item ">
+        <div id="grid-item-1" class="grid-item">
             <div class="card">
                 <ul id="topSellerImg1" class="card-menu">
-                    <li><a href="#"><i class="fa-solid fa-circle instock"></i></a></li>
-                    <li><a href="#" ><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a href="#" ><i class="fa-regular fa-shuffle"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
+                    <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                        data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="In storage" data-bs-custom-class="custom-tooltip">
+                        <i class="fa-solid fa-circle instock instock2"></i></button></a></li>
+                    <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                        data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite" data-bs-custom-class="custom-tooltip">
+                        <i class="fa-regular fa-heart instock"></i></button></a></li>
+                    <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                        data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Shuffle" data-bs-custom-class="custom-tooltip">
+                        <i class="fa-regular fa-shuffle instock"></i></button></a></li>
+                    <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                        data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" data-bs-custom-class="custom-tooltip">
+                        <i class="fa-solid fa-magnifying-glass instock"></i></button></a></li>
+                    <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                        data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" data-bs-custom-class="custom-tooltip">
+                        <i class="fa-regular fa-cart-shopping instock"></i></button></a></li> 
                 </ul>
 
                 <img src="images/Models/ProductThumb-6.svg" alt="placeholder image">
@@ -569,11 +623,21 @@
         <div class="grid-item grid-item-2">
             <div class="card">
                 <ul class="card-menu">
-                    <li><a href="#"><i class="fa-solid fa-circle instock"></i></a></li>
-                    <li><a href="#" ><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a href="#" ><i class="fa-regular fa-shuffle"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
+                    <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                        data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="In storage" data-bs-custom-class="custom-tooltip">
+                        <i class="fa-solid fa-circle instock instock2"></i></button></a></li>
+                    <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                        data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite" data-bs-custom-class="custom-tooltip">
+                        <i class="fa-regular fa-heart instock"></i></button></a></li>
+                    <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                        data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Shuffle" data-bs-custom-class="custom-tooltip">
+                        <i class="fa-regular fa-shuffle instock"></i></button></a></li>
+                    <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                        data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" data-bs-custom-class="custom-tooltip">
+                        <i class="fa-solid fa-magnifying-glass instock"></i></button></a></li>
+                    <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                        data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" data-bs-custom-class="custom-tooltip">
+                        <i class="fa-regular fa-cart-shopping instock"></i></button></a></li> 
                 </ul>
 
                 <img src="images/Models/ProductThumb-7.svg" alt="placeholder image">
@@ -599,11 +663,21 @@
         <div class="grid-item grid-item-3">
             <div class="card">
                 <ul class="card-menu">
-                    <li><a href="#"><i class="fa-solid fa-circle outofstock"></i></a></li>
-                    <li><a href="#" ><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a href="#" ><i class="fa-regular fa-shuffle"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#" ><i class="fa-regular fa-cart-shopping"></i></a></li>
+                    <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                        data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="In storage" data-bs-custom-class="custom-tooltip">
+                        <i class="fa-solid fa-circle outofstock"></i></button></a></li>
+                    <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                        data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite" data-bs-custom-class="custom-tooltip">
+                        <i class="fa-regular fa-heart instock"></i></button></a></li>
+                    <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                        data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Shuffle" data-bs-custom-class="custom-tooltip">
+                        <i class="fa-regular fa-shuffle instock"></i></button></a></li>
+                    <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                        data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick view" data-bs-custom-class="custom-tooltip">
+                        <i class="fa-solid fa-magnifying-glass instock"></i></button></a></li>
+                    <li><a href="#"><button  type="button" class="btn btn-theme bubble-storage" 
+                        data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to cart" data-bs-custom-class="custom-tooltip">
+                        <i class="fa-regular fa-cart-shopping instock"></i></button></a></li>   
                 </ul>
 
                 <img src="images/Models/ProductThumb-8.svg" alt="placeholder image">
@@ -640,8 +714,8 @@
                 <!-- Enter email adress form -->
                 <div class="subscribe-width">
                     <div class="container">
-                        <div class="search">
-                            <form id="searchBoxForm" class="searchBoxForm">
+                        <div class="subscribe-form">
+                            <form id="subscribeBoxForm" class="subscribeBoxForm">
                                 <input id="query" type="text" placeholder="Enter email address">
                                 <button type="submit">Subscribe</button>
                             </form>
