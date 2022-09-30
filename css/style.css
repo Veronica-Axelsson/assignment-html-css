@@ -75,13 +75,27 @@ a {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
     transition: 0.15s ease-in-out;
-
 }
 
     .btn-theme:hover {
         background-color: var(--color-theme-dark);
         color: var(--color-white);
     }
+
+/* .btn-popper {
+    background-color: blue;
+    color: pink;
+    border-radius: var(--border-radius-medium);
+    font-weight: var(--font-weight-medium);
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    transition: 0.15s ease-in-out;
+}
+    
+        .btn-popper:hover {
+            background-color: var(--color-theme-dark);
+            color: var(--color-white);
+        } */
 
     .btn-white {
         background-color: var(--color-white);
@@ -732,6 +746,8 @@ padding-top: 2rem;
                 height: 100%;
             }
 
+
+
         .products .card .card-menu {
             position: absolute;
             z-index: 1;
@@ -775,9 +791,48 @@ padding-top: 2rem;
                     }
 
                         .products .card .card-menu li a:hover { 
+                            /* border: 2px solid; */
                             color: var(--color-theme);
+                            border-radius: 1rem;
                         }
 
+
+    .products .card .card-menu .bubble-storage {
+        background-color: white;
+        border: none;
+        margin: 0;
+        padding: 0;
+        font-size: 1.4rem;
+    }
+
+    .products .card .card-menu .bubble-storage .data-bs-title {
+        background-color: pink;
+    }
+
+    .custom-tooltip {
+        --bs-tooltip-bg: var(--color-theme);
+        --bs-tooltip-color: var(--color-white);
+        --bs-tooltip-font-size: 1rem;
+        /* --bs-tooltip-margin: 2; */
+        --bs-tooltip-padding-x: 1.5rem;
+        
+      }
+
+
+
+      /* --#{$prefix}tooltip-zindex: #{$zindex-tooltip};
+      --#{$prefix}tooltip-max-width: #{$tooltip-max-width};
+      --#{$prefix}tooltip-padding-x: #{$tooltip-padding-x};
+      --#{$prefix}tooltip-padding-y: #{$tooltip-padding-y};
+      --#{$prefix}tooltip-margin: #{$tooltip-margin};
+      @include rfs($tooltip-font-size, --#{$prefix}tooltip-font-size);
+      --#{$prefix}tooltip-color: #{$tooltip-color};
+      --#{$prefix}tooltip-bg: #{$tooltip-bg};
+      --#{$prefix}tooltip-border-radius: #{$tooltip-border-radius};
+      --#{$prefix}tooltip-opacity: #{$tooltip-opacity};
+      --#{$prefix}tooltip-arrow-width: #{$tooltip-arrow-width};
+      --#{$prefix}tooltip-arrow-height: #{$tooltip-arrow-height};
+ */
 
 
 /* -- Learn more ------------------------------------*/
@@ -790,6 +845,8 @@ padding-top: 2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+            background-image: url(images/ProductOverlayMenu/bubbleStorage.svg);
+
     }
 
     .learn-more .learn-box {
