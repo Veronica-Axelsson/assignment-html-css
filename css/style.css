@@ -35,12 +35,12 @@ font-family: 'Roboto', sans-serif;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
-    --font-size-14: 1.17rem;
-    --font-size-16: 1.33rem;
-    --font-size-18: 1.5rem;
-    --font-size-24: 2rem;
-    --font-size-36: 3rem;
-    --font-size-60: 5rem;
+    --font-size-14: 0.875rem;
+    --font-size-16: 1rem;
+    --font-size-18: 1.125rem;
+    --font-size-24: 1.5rem;
+    --font-size-36: 2.25rem;
+    --font-size-60: 3.75rem;
 
     --border-radius-small: 8px;
     --border-radius-medium: 25px;
@@ -302,13 +302,9 @@ a {
 
 /* Top menu right */
     .top-menu .menu-links {
-        display: none;
+        display: block;
     }
-    
-        .top-menu .menu-links .links {
-            display: none;
-        }
-        
+            
         .top-menu .menu-links a{
             color: var(--color-white);
             text-decoration: none;
@@ -322,7 +318,7 @@ a {
 
             .top-menu .menu-links .social-media  {
                 margin-left: 1rem;
-                font-size: var(--font-size-14);
+                font-size: var(--font-size-16);
             }
 
                 .top-menu .menu-links .social-media a {
@@ -388,12 +384,14 @@ padding-top: 2rem;
                 .main-menu .search #searchBoxForm button:hover {
                     background-color: var(--color-theme-dark);
                 }
+/* Main menu search - End*/
 
     .main-menu .menu-links {
         flex: 4;
         display: flex;
         justify-content: end;
         align-items: center;
+        font-size: var(--font-size-16);
     }
 
         .main-menu .menu-links .menu-link {
@@ -506,27 +504,37 @@ padding-top: 2rem;
 }
 
     .showcase .container {
-        text-align: center;
-        padding-top: 2.4rem;
-        padding-bottom: 2.4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
         .showcase .container img {
-            display: none;
+            display: block;
+            width: 50%;
         }
 
+    .showcase .showcase-body a {
+        display: inline-block;
+    }
+
     .showcase .showcase-body h1 {
-        font-size: 3.5rem;
+        font-size: var(--font-size-60);
         font-family: var(--font-play);
     }
 
         .showcase .showcase-body h1 strong {
+            display: block;
             font-weight: var(--font-weight-bold);
             color: var(--color-theme);
         }
 
     .showcase .showcase-body p {
         margin: 2rem 0;
+        width: 60%;
     }
 
 
@@ -821,7 +829,7 @@ padding-top: 2rem;
 
         .learn-more .learn-box .learn-box-sale {
             background-color: var(--color-theme);
-            padding: 10rem 2rem;
+            padding: 7rem 2rem;
             justify-items: center;
         }
 
@@ -1379,173 +1387,3 @@ padding-top: 2rem;
 .form-bottom {
     margin-bottom: 7rem;
 }
-
-
-/* -- @media section ------------------------------ */
-@media (max-width: 577px) {
-    /* Add hamburg menu */
-    .main-menu .menu-links {
-        display: none;
-    }
-    
-
-    /* .showcase .container {
-        margin: 0 0;
-    } */
-
-/* Flex -Webshop-info */
-    .webshop-info .container-fluid {
-        flex-direction: column;
-    }
-
-    .webshop-info .info-box {
-        margin-bottom: 2rem;
-    }
-
-/* Flex - learn-more */
-    /* .learn-more .container {
-        flex-direction: column;
-    }
-
-    .learn-more .info-box {
-        margin-bottom: 2rem;
-    } */
-
-    /* Top sellers */
-    /* .top-sellers-grid {
-        grid-template-areas:
-            'one'
-            'two'
-            'three'
-        } */
-}
-
-@media (min-width: 578px) {
-    .top-menu .menu-links {
-        display: block;
-    }
-
-    .top-menu > .container {
-        justify-content: space-between;
-    }
-
-/* Flex -Webshop-info */
-    .webshop-info .container-fluid {
-        flex: 100%;
-        justify-content: space-evenly;
-    }
-
-    .webshop-info .info-box {
-        margin-bottom: 2rem;
-        min-width: 80%;
-    }
-
-/* Flex - learn-more */
-    /* .learn-more .container {
-        flex: 100%;
-        justify-content: space-evenly;
-    }
-
-    .learn-more .info-box {
-        margin-bottom: 2rem;
-        min-width: 80%;
-    } */
-
-        /* Top sellers */
-        /* .top-sellers-grid {
-            grid-template-areas:
-             'one'
-             'two'
-             'three'
-          } */
-}
-
-@media (min-width: 768px) {
-    .showcase .showcase-body h1 {
-        font-size: var(--font-size-60);
-        font-family: var(--font-play);
-    }
-
-    .showcase .showcase-body h1 strong {
-        display: block;
-    }
-
-    .showcase .showcase-body a {
-        display: inline-block;
-    }
-
-/* Flex -Webshop-info */
-    .webshop-info .info-box {
-        min-width: 40%;
-    }
-
-/* Flex - learn-more */
-    /* .learn-more .info-box {
-        min-width: 40%;
-    } */
-
-    /* Top sellers */
-    /* .top-sellers-grid {
-        grid-template-areas:
-         'one two'
-         'one three'
-      } */
-}
-
-@media (min-width: 992px) {
-    .top-menu .menu-links .links {
-        display: inline;
-    }
-
-    /* .main-menu .search {
-        display: block;
-    } */
-
-    .showcase .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .showcase .container img {
-        display: block;
-        width: 50%;
-    }    
-}
-
-@media (min-width: 1200px) {
-    .showcase .showcase-body {
-        flex: 1;
-    }
-
-    .showcase .showcase-body p {
-        width: 80%;
-    }
-
-    .showcase .container img {
-        flex: 1;
-        width: 100%;
-    }
-
-/* Flex -Webshop-info */
-    .webshop-info .info-box {
-        min-width: 20%;
-    }
-
-/* Flex - learn-more */
-    /* .learn-more .info-box {
-        min-width: 20%;
-    } */
-
-    /* .top-sellers-grid {
-        grid-template-areas:
-         'one two'
-         'one three'
-      } */
-
-    
-}
-
